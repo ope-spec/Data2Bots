@@ -1,0 +1,24 @@
+Data2Bots:
+  outputs:
+
+    dev:
+      type: postgres
+      threads: 1
+      host: 34.89.230.185
+      port: 5432
+      user: opeyadeg3905
+      pass: Omm6sSnmmo
+      dbname: d2b_accessment
+      schema: opeyadeg3905_staging
+
+    prod:
+      type: postgres
+      threads: 1
+      host: 34.89.230.185
+      port: 5432
+      user: opeyadeg3905
+      pass: Omm6sSnmmo
+      dbname: d2b_accessment
+      schema: opeyadeg3905_analytics
+
+  target: prod
