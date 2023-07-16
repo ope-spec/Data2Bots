@@ -52,7 +52,7 @@ WITH best_product AS (
 )
 
 SELECT
-  '2022-09-05'::date AS ingestion_date,
+  current_date AS ingestion_date,
   product_name,
   most_ordered_day,
   is_public_holiday,

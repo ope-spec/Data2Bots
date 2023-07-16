@@ -16,7 +16,7 @@ WITH public_holidays AS (
     d.month_of_the_year_num
 )
 SELECT
-  '2022-09-05'::date AS ingestion_date,
+  current_date AS ingestion_date,
   COALESCE(SUM(CASE WHEN month_of_the_year_num = 1 THEN total_orders END), 0) AS tt_order_hol_jan,
   COALESCE(SUM(CASE WHEN month_of_the_year_num = 2 THEN total_orders END), 0) AS tt_order_hol_feb,
   COALESCE(SUM(CASE WHEN month_of_the_year_num = 3 THEN total_orders END), 0) AS tt_order_hol_mar,

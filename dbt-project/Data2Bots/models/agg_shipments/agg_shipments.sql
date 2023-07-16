@@ -38,7 +38,7 @@ shipment_counts AS (
     AND '2022-09-05'::date >= o.order_date::date + INTERVAL '15 days'
 )
 SELECT
-  '2022-09-05'::date AS ingestion_date,
+  current_date AS ingestion_date,
   SUM(tt_late_shipments) AS tt_late_shipments,
   SUM(tt_undelivered_shipments) AS tt_undelivered_shipments
 FROM
