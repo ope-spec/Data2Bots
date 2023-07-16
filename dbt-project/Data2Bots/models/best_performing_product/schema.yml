@@ -1,0 +1,67 @@
+version: 2
+
+models:
+  - name: best_performing_product
+    columns:
+      - name: ingestion_date
+        description: "Date when the data was ingested"
+        tests:
+          - unique
+        meta:
+          primary_key: true
+        column_type: date
+      - name: product_name
+        description: "Name of the product"
+        column_type: varchar(255)
+        tests:
+          - not_null
+      - name: most_ordered_day
+        description: "Date when the product was ordered the most"
+        column_type: date
+        tests:
+          - not_null
+      - name: is_public_holiday
+        description: "Flag indicating whether the most ordered day was a public holiday"
+        column_type: boolean
+        tests:
+          - not_null
+      - name: tt_review_points
+        description: "Total review points for the product"
+        column_type: int
+        tests:
+          - not_null
+      - name: pct_one_star_review
+        description: "Percentage distribution of one-star reviews for the product"
+        column_type: float
+        tests:
+          - not_null
+      - name: pct_two_star_review
+        description: "Percentage distribution of two-star reviews for the product"
+        column_type: float
+        tests:
+          - not_null
+      - name: pct_three_star_review
+        description: "Percentage distribution of three-star reviews for the product"
+        column_type: float
+        tests:
+          - not_null
+      - name: pct_four_star_review
+        description: "Percentage distribution of four-star reviews for the product"
+        column_type: float
+        tests:
+          - not_null
+      - name: pct_five_star_review
+        description: "Percentage distribution of five-star reviews for the product"
+        column_type: float
+        tests:
+          - not_null
+      - name: pct_early_shipments
+        description: "Percentage distribution of early shipments for the product"
+        column_type: float
+        tests:
+          - not_null
+      - name: pct_late_shipments
+        description: "Percentage distribution of late shipments for the product"
+        column_type: float
+        tests:
+          - not_null

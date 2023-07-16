@@ -1,0 +1,65 @@
+[0m11:40:28.896087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B3B194FF90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B3B193EF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B3B1C615D0>]}
+
+
+============================== 11:40:28.900113 | 04ed07a4-65b6-4a08-9fb6-05adc92e6035 ==============================
+[0m11:40:28.900113 [info ] [MainThread]: Running with dbt=1.5.2
+[0m11:40:28.900113 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\OpeyemiOgunniyi\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m11:40:28.905220 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': WindowsPath('C:/Users/OpeyemiOgunniyi/.dbt')}
+[0m11:40:28.906229 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m11:41:12.206095 [debug] [MainThread]: Starter project path: C:\Users\OpeyemiOgunniyi\Desktop\DATA2BOTS\dbt-project\dbt-env\Lib\site-packages\dbt\include\starter_project
+[0m11:41:18.123725 [info ] [MainThread]: Profile dataWarehouse written to C:\Users\OpeyemiOgunniyi\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m11:41:18.125720 [info ] [MainThread]: 
+Your new dbt project "dataWarehouse" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:41:18.128720 [debug] [MainThread]: Command `dbt init` succeeded at 11:41:18.128720 after 49.24 seconds
+[0m11:41:18.130719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B3B1666890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B3AB6A8290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B3B195E5D0>]}
+[0m11:41:18.131723 [debug] [MainThread]: Flushing usage events
+[0m16:14:12.564658 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029DA041F9D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029DA05AA350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029DA005FF10>]}
+
+
+============================== 16:14:12.577131 | 9a3bcefe-74e8-4067-b0a9-745331b92a34 ==============================
+[0m16:14:12.577131 [info ] [MainThread]: Running with dbt=1.5.2
+[0m16:14:12.578137 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\OpeyemiOgunniyi\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:14:29.974164 [debug] [MainThread]: Starter project path: C:\Users\OpeyemiOgunniyi\Desktop\DATA2BOTS\dbt-project\dbt-env\Lib\site-packages\dbt\include\starter_project
+[0m16:17:33.508411 [info ] [MainThread]: 
+Your new dbt project "Data2Bots" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:17:33.512103 [debug] [MainThread]: Command `dbt init` succeeded at 16:17:33.510597 after 200.99 seconds
+[0m16:17:33.513111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029DA04989D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029D9FDB7810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029D9A0E3F10>]}
+[0m16:17:33.514109 [debug] [MainThread]: Flushing usage events
+[0m09:27:23.789249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001961F7836D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001961F397A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001961F397410>]}
+
+
+============================== 09:27:23.789249 | e5ad4a4d-65e4-40c6-a487-73e4d3d57e69 ==============================
+[0m09:27:23.789249 [info ] [MainThread]: Running with dbt=1.5.2
+[0m09:27:23.797378 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\OpeyemiOgunniyi\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m09:27:58.950010 [info ] [MainThread]: A project called Data2Bots already exists here.
+[0m09:27:58.951522 [debug] [MainThread]: Command `dbt init` succeeded at 09:27:58.951522 after 35.19 seconds
+[0m09:27:58.952439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001961F34AB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001961FAE70D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001961FAE7B50>]}
+[0m09:27:58.953850 [debug] [MainThread]: Flushing usage events

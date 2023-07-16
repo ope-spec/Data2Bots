@@ -1,0 +1,72 @@
+version: 2
+
+models:
+  - name: agg_public_holiday
+    description: "Aggregated public holiday orders"
+    columns:
+      - name: ingestion_date
+        description: "Date the data was ingested"
+        tests:
+          - not_null
+        type: date
+        primary_key: true
+      - name: tt_order_hol_jan
+        description: "Total orders on public holidays in January"
+        tests:
+          - not_null
+        type: integer
+      - name: tt_order_hol_feb
+        description: "Total orders on public holidays in February"
+        tests:
+          - not_null
+        type: integer
+      - name: tt_order_hol_mar
+        description: "Total orders on public holidays in March"
+        tests:
+          - not_null
+        type: integer
+      - name: tt_order_hol_apr
+        description: "Total orders on public holidays in April"
+        tests:
+          - not_null
+        type: integer
+      - name: tt_order_hol_may
+        description: "Total orders on public holidays in May"
+        tests:
+          - not_null
+        type: integer
+      - name: tt_order_hol_jun
+        description: "Total orders on public holidays in June"
+        tests:
+          - not_null
+        type: integer
+      - name: tt_order_hol_jul
+        description: "Total orders on public holidays in July"
+        tests:
+          - not_null
+        type: integer
+      - name: tt_order_hol_aug
+        description: "Total orders on public holidays in August"
+        tests:
+          - not_null
+        type: integer
+      - name: tt_order_hol_sep
+        description: "Total orders on public holidays in September"
+        tests:
+          - not_null
+        type: integer
+      - name: tt_order_hol_oct
+        description: "Total orders on public holidays in October"
+        tests:
+          - not_null
+        type: integer
+      - name: tt_order_hol_nov
+        description: "Total orders on public holidays in November"
+        tests:
+          - not_null
+        type: integer
+      - name: tt_order_hol_dec
+        description: "Total orders on public holidays in December"
+        tests:
+          - not_null
+        type: integer

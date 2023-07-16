@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: agg_shipments
+    description: "contains total number of late and undelivered shipments"
+    columns:
+      - name: ingestion_date
+        description: "Date the data was ingested"
+        type: date
+        primary_key: true
+        tests:
+          - not_null
+      - name: tt_late_shipments
+        description: "Total number of late shipments"
+        type: integer
+        tests:
+          - not_null
+      - name: tt_undelivered_items
+        description: "Total number of undelivered shipments"
+        type: integer
+        tests:
+          - not_null
