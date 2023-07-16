@@ -29,6 +29,7 @@ To install and set up the project, follow these steps:
 ### 1. Get the total number of orders placed on a public holiday every month, for the past year.
 
 **Location of SQL Query** - dbt-project/Data2Bots/models/agg_public_holiday
+
 **Description of query** - This query retrieves the total number of orders placed on public holidays each month for the past year. It joins the if_common.dim_dates table with the opeyadeg3905_staging.orders table to match the order dates with the public holidays (Boolean data). The result is stored in the derived view agg_public_holiday within the opeyadeg3905_analytics schema.
 
 **Query Breakdown**:
@@ -58,6 +59,7 @@ To install and set up the project, follow these steps:
 ### 2. Get the total number of late shipments and undelivered shipments.
 
 **Location of SQL Query** - dbt-project/Data2Bots/models/agg_shipments
+
 **Description of query** - This query calculates the total number of late shipments and undelivered shipments. It joins the opeyadeg3905_staging.shipment_deliveries table with the opeyadeg3905_staging.orders table to match the shipments with the corresponding orders. The results are returned as the total number of late shipments and undelivered shipments.
 
 **Query Breakdown**:
@@ -78,6 +80,7 @@ To install and set up the project, follow these steps:
 ### 3. Get information about the product with the highest reviews.
 
 **Location of SQL Query** - dbt-project/Data2Bots/models/best_performing_product
+
 **Description of query** - This query calculates the total number of late shipments and undelivered shipments. It joins the opeyadeg3905_staging.shipment_deliveries table with the opeyadeg3905_staging.orders table to match the shipments with the corresponding orders. The results are returned as the total number of late shipments and undelivered shipments.
 
 **Query Breakdown**:
