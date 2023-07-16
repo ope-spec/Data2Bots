@@ -30,7 +30,9 @@ To install and set up the project, follow these steps:
 
 **Location of SQL Query** - dbt-project/Data2Bots/models/agg_public_holiday
 **Description of query** - This query retrieves the total number of orders placed on public holidays each month for the past year. It joins the if_common.dim_dates table with the opeyadeg3905_staging.orders table to match the order dates with the public holidays (Boolean data). The result is stored in the derived view agg_public_holiday within the opeyadeg3905_analytics schema.
+
 **Query Breakdown**:
+
 	1. The query uses a Common Table Expression (CTE) named public_holidays to calculate the total number of orders on public holidays.
 
 	2. The CTE begins with the WITH keyword followed by the CTE name public_holidays.
@@ -57,7 +59,9 @@ To install and set up the project, follow these steps:
 
 **Location of SQL Query** - dbt-project/Data2Bots/models/agg_shipments
 **Description of query** - This query calculates the total number of late shipments and undelivered shipments. It joins the opeyadeg3905_staging.shipment_deliveries table with the opeyadeg3905_staging.orders table to match the shipments with the corresponding orders. The results are returned as the total number of late shipments and undelivered shipments.
+
 **Query Breakdown**:
+
 	1. The query begins by defining three Common Table Expressions (CTEs) - orders, shipment_deliveries, and shipment_counts. CTEs are temporary result sets that can be referenced within the main query.
 
 	2. The orders CTE selects the order_id and order_date from the opeyadeg3905_staging.orders table. The order_date is cast to the date data type.
@@ -75,7 +79,9 @@ To install and set up the project, follow these steps:
 
 **Location of SQL Query** - dbt-project/Data2Bots/models/best_performing_product
 **Description of query** - This query calculates the total number of late shipments and undelivered shipments. It joins the opeyadeg3905_staging.shipment_deliveries table with the opeyadeg3905_staging.orders table to match the shipments with the corresponding orders. The results are returned as the total number of late shipments and undelivered shipments.
+
 **Query Breakdown**:
+
 	1. The query starts with a Common Table Expression (CTE) named best_product. CTEs allow you to create temporary result sets that can be referenced later in the query.
 
 	2. The CTE consists of three subqueries joined together to gather information about the best product:
